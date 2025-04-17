@@ -1,0 +1,53 @@
+--- Selected Columns ---
+                            Name   Location  Year  Mileage  Price
+Hyundai Creta 1.6 CRDi SX Option       Pune  2015    19.67  12.50
+                    Honda Jazz V    Chennai  2011    13.00   4.50
+               Maruti Ertiga VDI    Chennai  2012    20.77   6.00
+ Audi A4 New 2.0 TDI Multitronic Coimbatore  2013    15.20  17.74
+          Nissan Micra Diesel XV     Jaipur  2013    23.08   3.50
+
+--- Filtered Cars (age > 10 years) ---
+ Unnamed: 0                                Name   Location  Year  Kilometers_Driven Owner_Type  Mileage  Engine  Power  Seats  New_Price  Price  Fuel_Type_Electric  Fuel_Type_Petrol  Transmission_Manual  Car_Age
+          2                        Honda Jazz V    Chennai  2011              46000      First    13.00  1199.0  88.70    5.0       8.61   4.50                 0.0               1.0                  1.0       14
+          3                   Maruti Ertiga VDI    Chennai  2012              87000      First    20.77  1248.0  88.76    7.0      11.48   6.00                 0.0               0.0                  1.0       13
+          4     Audi A4 New 2.0 TDI Multitronic Coimbatore  2013              40670     Second    15.20  1968.0 140.80    5.0      11.48  17.74                 0.0               0.0                  0.0       12
+          6              Nissan Micra Diesel XV     Jaipur  2013              86999      First    23.08  1461.0  63.10    5.0      11.48   3.50                 0.0               0.0                  1.0       12
+          8 Volkswagen Vento Diesel Comfortline       Pune  2013              64430      First    20.54  1598.0 103.60    5.0      11.48   5.20                 0.0               0.0                  1.0       12
+
+--- Renamed DataFrame (Current_Price) ---
+ Current_Price
+         12.50
+          4.50
+          6.00
+         17.74
+          3.50
+
+--- Mutated DataFrame (Price_Per_Year) ---
+ Current_Price  Car_Age  Price_Per_Year
+         12.50       10        1.250000
+          4.50       14        0.321429
+          6.00       13        0.461538
+         17.74       12        1.478333
+          3.50       12        0.291667
+
+--- Arranged by Price (top 5) ---
+ Current_Price                                        Name
+        160.00 Land Rover Range Rover 3.0 Diesel LWB Vogue
+        120.00                  Lamborghini Gallardo Coupe
+        100.00                      Jaguar F Type 5.0 V8 S
+         97.07             Land Rover Range Rover Sport SE
+         93.67                          BMW 7 Series 740Li
+
+--- Summary of Price by Location ---
+  Location      mean  count  min    max
+ Ahmedabad  8.567248    218 0.75  85.00
+ Bangalore 13.482670    352 1.65  93.00
+   Chennai  7.958340    476 0.70  70.00
+Coimbatore 15.160206    631 1.68  93.67
+     Delhi  9.881944    540 0.75 120.00
+ Hyderabad  9.997423    710 0.60 160.00
+    Jaipur  5.916725    403 0.45  42.50
+     Kochi 11.309109    640 1.26  97.07
+   Kolkata  5.733924    525 0.65  75.00
+    Mumbai  9.592546    762 0.55  75.00
+      Pune  6.951000    590 0.44  68.00
